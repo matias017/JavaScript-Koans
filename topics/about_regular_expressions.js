@@ -19,7 +19,7 @@ test("match", () => {
 });
 
 test("replace", () => {
-    const pie = "apple pie".replace("apple", "strawberry");
+    let pie = "apple pie".replace("apple", "strawberry");
     equal(__, pie, 'what is the value of pie?');
 
     pie = "what if 6 turned out to be 9?".replace(/\d/g, (number) => { // the second parameter can be a string or a function
