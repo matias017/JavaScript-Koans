@@ -7,7 +7,7 @@ The inspiration for this project comes from the Edgecase Ruby Koans and the book
 
 The goal is to make the tests pass, and for that you need to "fill in the gaps".
 
-While the original project is made to run in a browser, this is an adaptation to be run under [NodeJS](https://nodejs.org/).
+While the original   ject is made to run in a browser, this is an adaptation to be run under [NodeJS](https://nodejs.org/).
 
 The koans use the internal NodeJS' `assert` module and implement a minimum colored interface to display the results.
 
