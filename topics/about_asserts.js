@@ -7,7 +7,8 @@ const koans = require('../support/koans')
 
 const { __ } = koans
 const { test } = koans
-
+function testAssert(){
+    
 test("ok", () => {
     assert.ok(true === true, 'what will satisfy the ok assertion?');
 })
@@ -19,3 +20,8 @@ test("not ok", () => {
 test("ok", () => {
     assert.equal(2, 1 + 1, 'what will satisfy the equal assertion?');
 })
+}
+module.exports={
+    testAssert
+}
+
