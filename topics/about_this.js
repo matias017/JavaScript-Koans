@@ -1,7 +1,7 @@
 // module("About this (topics/about_this.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
-
+function testThis(){
 test("'this' inside a method", () => {
 	const person = {
 		name: 'bob',
@@ -41,6 +41,10 @@ test("'this' set explicitly", () => {
 	equal(message, "Hello, my name is Frank", "What does 'this' refer to when you use the 'call()' method?");
 });
 
+}
+module.exports={
+    testThis
+}
 // extra credit: underscore.js has a 'bind' function http://documentcloud.github.com/underscore/#bind
 // read the source and see how it is implemented
 

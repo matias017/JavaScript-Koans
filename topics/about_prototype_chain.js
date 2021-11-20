@@ -4,7 +4,7 @@
 // module("About Prototype Chain (topics/about_prototype_chain.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
-
+function testPrototype(){
 const father = {
   b: 3,
   c: 4
@@ -62,4 +62,7 @@ test("Is there an 'd' property on child?", () => {
   equal(undefined, child.d, 'what is the value of child.d?');
 });
 
-
+}
+module.exports={
+    testPrototype
+}

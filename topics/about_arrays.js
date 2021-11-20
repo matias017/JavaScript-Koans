@@ -1,7 +1,7 @@
  // module("About Arrays (topics/about_arrays .js)");
 const { equal, deepEqual } = require('assert')
 const { __, test } = require('../support/koans')
-
+function testArray(){
 test("array literal syntax and indexing", () => {
     const favouriteThings = ["cellar door", 42, true]; // note that array elements do not have to be of the same type
     equal('cellar door', favouriteThings[0], 'what is in the first position of the array?');
@@ -46,3 +46,7 @@ test("queue methods", () => {
     equal('third', queue.shift(), 'what will be shifted out first?');
     equal('first', queue.shift(), 'what will be shifted out second?');
 });
+}
+module.exports={
+    testArray
+}

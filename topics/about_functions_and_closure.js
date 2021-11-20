@@ -1,7 +1,7 @@
 // module("About Functions And Closure (topics/about_functions_and_closure.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
-
+function testFunctions(){
 test("defining functions directly", () => {
     const result = "a";
     function changeResult() {
@@ -75,3 +75,7 @@ test("using apply to invoke function", () => {
     equal('I am this!I am arg1I am arg2', result, "what will the value of invokee's this be?");
 });
 
+}
+module.exports={
+    testFunctions
+}

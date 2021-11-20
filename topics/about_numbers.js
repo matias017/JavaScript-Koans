@@ -1,7 +1,7 @@
 // module("About Numbers (topics/about_numbers.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
-
+function testNumbers(){
 test("types", () => {
     const typeOfIntegers = typeof(6);
     const typeOfFloats = typeof(3.14159);
@@ -15,3 +15,7 @@ test("NaN", () => {
     equal(true, Number.isNaN(resultOfFailedOperations), 'what will satisfy the equals assertion?');
     equal(false, resultOfFailedOperations == NaN, 'is NaN == NaN?');
 });
+}
+module.exports={
+    testNumbers
+}

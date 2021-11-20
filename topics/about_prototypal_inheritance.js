@@ -2,7 +2,7 @@
 // module("About Prototypal Inheritance (topics/about_prototypal_inheritance.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
-
+function testPrototypal(){
 // this 'class' pattern defines a class by its constructor
 const Mammal = function(name) {
     this.name = name;
@@ -59,3 +59,7 @@ test("Inheritance", () => {
     equal('Hello, my name is Lenny', lenny.sayHi(), "what does Lenny say?");
     equal('1.5m', lenny.wingspan, "what is Lenny's wingspan?");
 });
+}
+module.exports={
+    testPrototypal
+}

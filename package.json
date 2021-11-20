@@ -5,8 +5,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./",
-    "koans": ""
+    "start": "node index.js ./",
+    "koans": "./index.js"
   },
   "repository": {
     "type": "git",

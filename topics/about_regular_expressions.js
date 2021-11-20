@@ -7,7 +7,7 @@ const { __, test } = require('../support/koans')
  //   const results = numberFinder.exec("what if 6 turned out to be 9?");
 //    ok(results.equalTo([__, __, __]), 'what is the value of results?');		
 //});
-
+function testRegular(){
 test("test", () => {
     const containsSelect = /select/.test("  select * from users ");
     equal(true, containsSelect, 'does the string provided contain "select"?');
@@ -28,5 +28,8 @@ test("replace", () => {
     });
     equal('what if six turned out to be nine?', pie, "what is the value of pie?");
 });
-
+}
+module.exports={
+    testRegular
+}
 // THE END
