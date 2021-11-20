@@ -1,3 +1,5 @@
+//se inicializa con npm start
+
 const {testAsserts} = require('./topics/about_asserts')
 const {testOperators} = require('./topics/about_operators')
 const {testEquality} = require('./topics/about_equality')
